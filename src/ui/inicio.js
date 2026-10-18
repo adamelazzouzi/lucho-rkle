@@ -28,7 +28,7 @@ export function montarInicio(contenedor) {
                 <div class="inicio-carrusel" id="carrusel">
                     <img src="assets/carrusel/rk.jpg" alt="Lucho RK" class="activa">
                     <img src="assets/carrusel/sordo.jpg" alt="Portada SORDO DE UN PIE">
-                    <img src="assets/carrusel/otro.jpg" alt="Lucho RK">
+                    <img src="assets/carrusel/tafacil.jpg" alt="Portada TA FACIL">
                 </div>
             </div>
             <h1 class="inicio-titulo">Lucho RKle</h1>
