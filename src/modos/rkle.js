@@ -346,7 +346,7 @@ function irAlSiguienteNivel(contenedor, onVolver) {
     estado.nivelActual = siguienteNivel;
     estado.respondiendo = false;
 
-    // Limpiar buscador
+    // Limpiar buscador (sigue habilitado, pero vacío)
     if (estado.buscador) estado.buscador.limpiar();
 
     // Reproducir siguiente nivel
@@ -361,10 +361,6 @@ function responder(idElegido, contenedor, onVolver) {
     estado.respondiendo = true;
 
     pararAudio();
-
-    if (estado.buscador) {
-        estado.buscador.deshabilitar();
-    }
 
     const pregunta = estado.preguntas[estado.rondaActual];
     const idCorrecto = pregunta.correcta.id;
@@ -399,6 +395,9 @@ function responder(idElegido, contenedor, onVolver) {
             }
 
             estado.respondiendo = false;
+
+            // Limpiar el buscador para que el usuario pueda buscar en el siguiente nivel
+            if (estado.buscador) estado.buscador.limpiar();
 
             setTimeout(() => {
                 estado.nivelActual++;

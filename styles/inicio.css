@@ -1,5 +1,5 @@
 /* ============================================
-   PANTALLA DE INICIO - LA PANTERLE
+   PANTALLA DE INICIO - LUCHO RKLE
    ============================================ */
 
 .inicio-header {
@@ -8,17 +8,14 @@
     padding-top: var(--esp-6);
 }
 
-/* ============================================
-   PORTADA / CARRUSEL
-   ============================================ */
 .inicio-portada {
     width: 160px;
     height: 160px;
     margin: 0 auto var(--esp-6);
     border-radius: var(--radio-lg);
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--dorado);
+    box-shadow: 0 20px 60px rgba(200, 16, 46, 0.3);
+    border: 3px solid var(--rubio);
 }
 
 .inicio-carrusel {
@@ -42,15 +39,12 @@
     opacity: 1;
 }
 
-/* ============================================
-   TEXTOS
-   ============================================ */
 .inicio-titulo {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 900;
     letter-spacing: -1px;
     margin-bottom: var(--esp-1);
-    background: linear-gradient(180deg, var(--blanco) 0%, var(--dorado) 100%);
+    background: linear-gradient(180deg, var(--rubio) 0%, var(--rojo) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -58,7 +52,7 @@
 
 .inicio-artista {
     font-size: 14px;
-    color: var(--dorado);
+    color: var(--rojo);
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: var(--esp-3);
@@ -70,9 +64,6 @@
     color: var(--gris-400);
 }
 
-/* ============================================
-   MODOS
-   ============================================ */
 .inicio-modos {
     display: flex;
     flex-direction: column;
@@ -84,8 +75,8 @@
     display: flex;
     align-items: center;
     gap: var(--esp-4);
-    background: var(--gris-950);
-    border: 1px solid var(--gris-850);
+    background: var(--gris-900);
+    border: 1px solid var(--gris-800);
     border-radius: var(--radio-lg);
     padding: var(--esp-5);
     text-align: left;
@@ -95,10 +86,10 @@
 }
 
 .modo-card:hover {
-    border-color: var(--dorado);
-    background: var(--gris-900);
+    border-color: var(--rubio);
+    background: var(--gris-850);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(245, 184, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(232, 201, 137, 0.1);
 }
 
 .modo-card:active {
@@ -139,16 +130,14 @@
 
 .modo-card:hover .modo-card-flecha {
     transform: translateX(4px);
-    color: var(--dorado);
+    color: var(--rubio);
 }
 
-/* ============================================
-   BADGE PANTERLEX (+N)
-   ============================================ */
-.panterlex-badge-nuevo {
-    display: inline-block;
-    background: var(--dorado);
-    color: var(--negro);
+/* Badge de la RKlex (+N) - forzado para que se vea */
+.rklex-badge-nuevo {
+    display: inline-block !important;
+    background: var(--rojo) !important;
+    color: var(--blanco) !important;
     font-size: 11px;
     font-weight: 800;
     padding: 2px 7px;
@@ -163,13 +152,10 @@
     50% { transform: scale(1.1); }
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
 .inicio-footer {
     margin-top: auto;
     padding-top: var(--esp-6);
-    border-top: 1px solid var(--gris-850);
+    border-top: 1px solid var(--gris-800);
     text-align: center;
 }
 
