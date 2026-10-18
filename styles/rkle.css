@@ -1,0 +1,391 @@
+/* ============================================
+   MODO - LUCHO RKLE
+   ============================================ */
+
+.juego-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--esp-3);
+    margin-bottom: var(--esp-6);
+    padding-bottom: var(--esp-4);
+    border-bottom: 1px solid var(--gris-800);
+}
+
+.juego-btn-volver {
+    font-size: 13px;
+    color: var(--gris-400);
+    padding: 6px 10px;
+    border-radius: var(--radio-sm);
+    transition: all var(--transicion);
+    font-weight: 600;
+}
+
+.juego-btn-volver:hover {
+    color: var(--rubio);
+    background: var(--gris-900);
+}
+
+.juego-titulo-header {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--rubio);
+}
+
+.juego-espacio {
+    min-width: 60px;
+    text-align: right;
+}
+
+.rkle-inicio {
+    text-align: center;
+    padding: var(--esp-8) 0;
+}
+
+.rkle-inicio-icono {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: var(--esp-6);
+}
+
+.rkle-inicio-titulo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: var(--esp-4);
+    background: linear-gradient(180deg, var(--rubio) 0%, var(--rojo) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.rkle-inicio-descripcion {
+    font-size: 14px;
+    color: var(--gris-400);
+    line-height: 1.6;
+    margin-bottom: var(--esp-8);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rkle-inicio-info {
+    display: flex;
+    justify-content: center;
+    gap: var(--esp-6);
+    margin-bottom: var(--esp-8);
+    padding: var(--esp-5);
+    background: var(--gris-900);
+    border: 1px solid var(--gris-800);
+    border-radius: var(--radio-lg);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rkle-inicio-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.rkle-inicio-info-valor {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--rubio);
+}
+
+.rkle-inicio-info-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gris-500);
+    font-weight: 600;
+}
+
+.rkle-btn-empezar {
+    width: 100%;
+    max-width: 320px;
+    padding: 18px 32px;
+    background: var(--rojo);
+    color: var(--blanco);
+    border-radius: var(--radio-md);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transicion);
+}
+
+.rkle-btn-empezar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(200, 16, 46, 0.3);
+    background: var(--rojo-oscuro);
+}
+
+.rkle-btn-empezar:active {
+    transform: translateY(0);
+}
+
+.rkle-btn-secundario {
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 24px;
+    background: transparent;
+    color: var(--gris-300);
+    border: 1px solid var(--gris-700);
+    border-radius: var(--radio-md);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all var(--transicion);
+    margin-top: var(--esp-3);
+}
+
+.rkle-btn-secundario:hover {
+    border-color: var(--rubio);
+    color: var(--rubio);
+}
+
+.rkle-ronda {
+    display: flex;
+    flex-direction: column;
+    gap: var(--esp-5);
+}
+
+.rkle-puntuacion {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--negro);
+    background: var(--rubio);
+    padding: 4px 10px;
+    border-radius: var(--radio-full);
+}
+
+.rkle-audio-indicador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--esp-3);
+    padding: var(--esp-4);
+    background: var(--gris-900);
+    border: 1px solid var(--gris-800);
+    border-radius: var(--radio-lg);
+    font-size: 14px;
+    color: var(--gris-300);
+    transition: all var(--transicion);
+}
+
+.rkle-audio-indicador.acierto {
+    border-color: var(--exito);
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--exito);
+}
+
+.rkle-audio-indicador.fallo {
+    border-color: var(--error);
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--error);
+}
+
+.rkle-audio-icono {
+    font-size: 20px;
+}
+
+.rkle-niveles {
+    display: flex;
+    gap: var(--esp-2);
+    justify-content: center;
+}
+
+.rkle-nivel {
+    padding: 6px 16px;
+    background: var(--gris-900);
+    border: 1px solid var(--gris-800);
+    border-radius: var(--radio-full);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--gris-500);
+    font-family: var(--fuente-mono);
+    transition: all var(--transicion);
+}
+
+.rkle-nivel.activo {
+    background: var(--rojo);
+    border-color: var(--rojo);
+    color: var(--blanco);
+}
+
+.rkle-pregunta {
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.rkle-buscador-contenedor {
+    margin-top: var(--esp-4);
+    position: relative;
+    z-index: 10;
+}
+
+/* Botón skip (pasar de nivel) */
+.rkle-btn-skip {
+    width: 100%;
+    padding: 14px 20px;
+    background: transparent;
+    color: var(--gris-300);
+    border: 1px solid var(--gris-700);
+    border-radius: var(--radio-md);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transicion);
+    margin-top: var(--esp-3);
+}
+
+.rkle-btn-skip:hover {
+    border-color: var(--rubio);
+    color: var(--rubio);
+    background: var(--gris-850);
+}
+
+.rkle-btn-skip.oculto {
+    display: none;
+}
+
+/* Botón rendirse (no me la sé) */
+.rkle-btn-rendirse {
+    width: 100%;
+    padding: 14px 20px;
+    background: transparent;
+    color: var(--gris-300);
+    border: 1px solid var(--rojo);
+    border-radius: var(--radio-md);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transicion);
+    margin-top: var(--esp-3);
+}
+
+.rkle-btn-rendirse:hover {
+    border-color: var(--rojo);
+    color: var(--blanco);
+    background: var(--rojo);
+}
+
+.rkle-btn-rendirse.oculto {
+    display: none;
+}
+
+.rkle-final {
+    text-align: center;
+    padding: var(--esp-8) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--esp-5);
+}
+
+.rkle-final-emoji {
+    font-size: 72px;
+    line-height: 1;
+}
+
+.rkle-final-puntuacion {
+    display: flex;
+    align-items: baseline;
+    gap: var(--esp-2);
+}
+
+.rkle-final-numero {
+    font-size: 72px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    color: var(--rubio);
+}
+
+.rkle-final-total {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--rojo);
+}
+
+.rkle-final-mensaje {
+    font-size: 16px;
+    color: var(--gris-300);
+    margin-bottom: var(--esp-4);
+}
+
+.rkle-final-acciones {
+    display: flex;
+    flex-direction: column;
+    gap: var(--esp-3);
+    width: 100%;
+    align-items: center;
+}
+
+.rkle-preparando {
+    text-align: center;
+    padding: var(--esp-8) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--esp-5);
+}
+
+.rkle-preparando-icono {
+    font-size: 72px;
+    line-height: 1;
+    animation: pulso 1.5s ease-in-out infinite;
+}
+
+@keyframes pulso {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.7; }
+}
+
+.rkle-preparando-titulo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.rkle-preparando-descripcion {
+    font-size: 14px;
+    color: var(--gris-400);
+    margin: 0;
+}
+
+.rkle-preparando-barra {
+    width: 100%;
+    max-width: 320px;
+    height: 8px;
+    background: var(--gris-800);
+    border-radius: var(--radio-full);
+    overflow: hidden;
+    margin-top: var(--esp-4);
+}
+
+.rkle-preparando-relleno {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--rubio), var(--rojo));
+    border-radius: var(--radio-full);
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rkle-preparando-contador {
+    font-family: var(--fuente-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gris-400);
+    font-variant-numeric: tabular-nums;
+}

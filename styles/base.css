@@ -1,0 +1,189 @@
+/* ============================================
+   BASE
+   Reset + variables + tipografía
+   ============================================ */
+
+/* ============================================
+   FUENTES
+   ============================================ */
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/SpaceGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/SpaceGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('../assets/fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../assets/fonts/SpaceMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('../assets/fonts/SpaceMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Variables */
+:root {
+    /* Colores base - Lucho RKle (rojo + rubio + azul) */
+    --negro: #0a0a0a;
+    --gris-950: #0d1520;
+    --gris-900: #121d2b;
+    --gris-850: #182636;
+    --gris-800: #1e3046;
+    --gris-700: #2a4060;
+    --gris-600: #3d5478;
+    --gris-500: #5a7092;
+    --gris-400: #7e93b0;
+    --gris-300: #a8bbd0;
+    --gris-200: #cdd8e5;
+    --gris-100: #e8eef5;
+    --blanco: #fafafa;
+
+    /* Acentos Lucho RK */
+    --rojo: #c8102e;
+    --rojo-oscuro: #8b0a1e;
+    --rubio: #e8c989;
+    --rubio-claro: #f5dfb0;
+    --azul: #1a4a7a;
+    --azul-oscuro: #0f2d4d;
+
+    /* Estados */
+    --exito: #22c55e;
+    --error: #ef4444;
+    --aviso: #f59e0b;
+
+    /* Tipografía */
+    --fuente-sans: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --fuente-mono: 'Space Mono', 'SF Mono', Monaco, 'Courier New', monospace;
+
+    /* Espaciado */
+    --esp-1: 4px;
+    --esp-2: 8px;
+    --esp-3: 12px;
+    --esp-4: 16px;
+    --esp-5: 20px;
+    --esp-6: 24px;
+    --esp-8: 32px;
+    --esp-10: 40px;
+    --esp-12: 48px;
+
+    /* Radios (modernos: redondeados) */
+    --radio-sm: 6px;
+    --radio-md: 10px;
+    --radio-lg: 14px;
+    --radio-full: 999px;
+
+    /* Transiciones */
+    --transicion: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--fuente-sans);
+    background: var(--negro);
+    color: var(--blanco);
+    min-height: 100vh;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+/* Contenedor principal */
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--esp-6) var(--esp-4);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Botones */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+/* Inputs */
+input, textarea {
+    font-family: inherit;
+    color: inherit;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--negro);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gris-700);
+    border-radius: var(--radio-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gris-500);
+}
+
+/* Selección */
+::selection {
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+/* Utilidad: oculto */
+.oculto {
+    display: none !important;
+}
