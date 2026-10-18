@@ -1,11 +1,11 @@
-# La Panterle
+# Lucho RKle
 
-Juego online para adivinar las canciones de La Pantera.
+Juego online para adivinar las canciones de Lucho RK.
 
-5 canciones aleatorias. 15 segundos por ronda. Sin registro.
+10 canciones aleatorias. 3 niveles de audio (1s, 3s, 5s). Sin registro.
 
-🌐 **Jugar**: https://la-panterle.pages.dev
+🌐 **Jugar**: https://lucho-rkle.pages.dev
 
 ---
 
-Proyecto personal sin ánimo de lucro. Todas las canciones son propiedad de La Pantera y su sello discográfico.
+Proyecto personal sin ánimo de lucro. Todas las canciones son propiedad de Lucho RK y su sello discográfico.
